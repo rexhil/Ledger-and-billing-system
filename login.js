@@ -47,7 +47,7 @@ daybook.addEventListener('click',()=>{
 cargo.addEventListener('click',()=>{
   let cargowin =new BrowserWindow({
     width:1080,
-    height:700,
+    height:800,
     x:0,
     y:0,
     resizable: false
