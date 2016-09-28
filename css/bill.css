@@ -1,0 +1,12 @@
+#title {
+  position:relative;
+  text-align: center;
+  font: bold 30px "Times New Roman", Georgia, Sans-Serif ;
+  overflow: hidden; }
+.tbl-content{
+	height:350px; 
+	overflow-x: auto;
+	width:800;
+	overflow: hidden;}
+.sn{color: white;}
+#part input{width:300px;}

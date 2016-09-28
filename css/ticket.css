@@ -1,0 +1,114 @@
+body{
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: #EA5C54;
+  background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
+}
+#form {
+  opacity: 1;
+  top: 20px;
+  position: relative;
+  width: 340px;
+  border-top: 2px solid #D8312A;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  padding: 70px 40px 40px 40px;
+  background: #35394a;
+  background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+}
+.cpd{
+  font-family: "Times New Roman", Georgia, Serif;
+  padding: 10px 10px 10px 10px;
+}
+.sec_tkt,
+.name_air,
+.submit,
+.fare_folio{
+  width: 150px
+  font-family: "Times New Roman", Georgia, Serif;
+  padding: 10px 10px 10px 10px;
+}
+.air{
+  float: right;
+  width: 28%;
+}
+.name{
+  width: 70%;
+}
+.air select,
+.tktno input,
+.folio input,
+.sector input{
+  float: right;
+  width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+input,
+select{
+  width: 49%;
+  font-size: 15px;
+}
+textarea{
+  font-size: 15px;
+  resize: none;
+  width: 100%;
+}
+
+#submit:enabled {
+  width: 40%;
+  margin-left: 80px;
+  border-radius: 50px;
+  background: transparent;
+  padding: 10px 20px;
+  border: 2px solid #DC6180;
+  color: #DC6180;
+  text-transform: uppercase;
+  font-size: 11px;
+  align-items: center;
+  -webkit-transition-property: background,color;
+  transition-property: background,color;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+#submit:focus:enabled {
+  box-shadow: none;
+  outline: none;
+}
+#submit:hover:enabled {
+  color: white;
+  background: #DC6180;
+  cursor: pointer;
+  -webkit-transition-property: background,color;
+  transition-property: background,color;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+#submit:disabled {
+  margin-left: 2000px;
+  background: #dddddd;
+  border: 2px solid #dddddd;
+  color: #dddddd;
+}
+
+#submit,
+input[type=text],
+input[type=number],
+select{
+  padding: 10px 10px 10px 10px;
+}

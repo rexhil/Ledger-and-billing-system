@@ -1,0 +1,133 @@
+body{
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: #EA5C54;
+  background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
+}
+
+#form {
+  opacity: 1;
+  position: relative;
+  width: 400px;
+  border-top: 2px solid #D8312A;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  padding: 70px 40px 40px 40px;
+  background: #1f222e;
+}
+label{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.tkt select option{
+  background-color: #1f222e;
+}
+
+input,
+select{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid ;
+  height: 40%;
+  font-size: 15px;
+  margin: 10px 10px 10px 10px;
+  color: #DC6180;
+}
+select{
+  width: 44%;
+}
+
+
+#air{
+  float: right;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus,
+select:focus{
+  outline: 0px;
+
+}
+/*.ledger,
+.db,
+.tkt,
+.folio,*/
+#submit_db,
+#submit_lfn,
+#submit_tkt{
+  color: white;
+  font-size: 20px;
+  font-family: "Times New Roman", Georgia, Serif;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+}
+
+.ledger input{
+  width: 35%;
+  height: 40%;
+  font-size: 15px;
+}
+.db input,
+.tkt input{
+  width: 35%;
+  height: 40%;
+  font-size: 15px;
+  margin-left: 90px;
+}
+#submit_lfn:enabled,
+#submit_db:enabled,
+#submit_tkt:enabled {
+  width: 40%;
+  margin-left: 90px;
+  border-radius: 50px;
+  background: transparent;
+  padding: 10px 20px;
+  border: 2px solid #DC6180;
+  color: #DC6180;
+  text-transform: uppercase;
+  font-size: 11px;
+  align-items: center;
+  -webkit-transition-property: background,color;
+  transition-property: background,color;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+#submit_lfn:focus:enabled,
+#submit_db:focus:enabled,
+#submit_tkt:focus:enabled {
+  box-shadow: none;
+  outline: none;
+}
+#submit_lfn:hover:enabled,
+#submit_db:hover:enabled,
+#submit_tkt:hover:enabled {
+  color: white;
+  background: #DC6180;
+  cursor: pointer;
+  -webkit-transition-property: background,color;
+  transition-property: background,color;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+#submit_lfn:disabled,
+#submit_db:disabled,
+#submit_tkt:disabled {
+  margin-left: 2000px;
+  background: #dddddd;
+  border: 2px solid #dddddd;
+  color: #dddddd;
+}

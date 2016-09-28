@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+</head>
+<body>
+<div class='login'>
+  <div class='login_title'>
+    <span><h1>Admin Login</h1></span>
+  </div>
+  <div class='login_fields'>
+    <div class='login_fields__user'>
+      <input value='Admin' type='text' disabled>
+      </input>
+    </div>
+    <br/>
+    <div class='login_fields__password'>
+      <input name='password' id='password' class='password' type='password'>
+    </div>
+    <div class='login_fields__submit'>
+      <input type='submit' value='Log In' id='login-btn'>
+      <div class='forgot'>
+        <button type="button" name="button" style="font-size: 11px;">Guest Login</button>
+      </div>
+    </div>
+  </div>
+  <div class='nsuccess'>
+    <h2 style="color:red">Authentication Failed</h2>
+    <a href="#" style="color:gray" class="tryagain">Try Again</a>
+  </div>
+  <div class='success'>
+    <h4 style="color:green">Authentication Succssful</h4>
+    <button class="button-big" id="create">Create Ledger</button>
+    <h3>............ M E N U .............</h3>
+    <button class="button" id="daybook">Daybook</button>
+    <button class="button" id="ticket">Ticketing</button>
+    <button class="button" id="cargo">Cargo Bill</button>
+    <button class="button" id="report">Report</button><br/>
+    <button type="button" class="logout" style="margin-left:60px; margin-top:100px; float:center">Logout</button>
+  </div>
+</div>
+<div class='authent'>
+  <img src='js/puff.svg'>
+  <p>Authenticating...</p>
+</div>
+<script>
+  window.$ = window.jQuery = require('./js/jquery.min.js');
+</script>
+<script>require("./jquery-ui/jquery-ui.min.js");</script>
+<script>require("./js/login.js");</script>
+<script>require("./login.js");</script>
+</body>
+</html>

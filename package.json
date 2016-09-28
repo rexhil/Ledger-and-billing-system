@@ -1,0 +1,16 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "Simple App",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . myapp --platform=win32 --arch=ia32"
+  },
+  "author": "Rexhil Regmi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "sql.js": "^0.3.2"
+  }
+}

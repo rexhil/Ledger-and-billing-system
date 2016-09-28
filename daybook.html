@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Day-book</title>
+    <link rel="stylesheet" href="css/forms-nr-min.css">
+    <link rel="stylesheet" href="css/daybook.css">
+  </head>
+  <body>
+    <div id='form'>
+      <h1 style="color:white; margin-left:40px; margin-top:0px">Day-Book</h1>
+      <div class="pure-form">
+        <div class="tran">
+          <select id ='t_type' class="trans" name="trns-type" required>
+            <option value="" selected>Choose Transaction Type</option>
+            <option value=1>Received</option>
+            <option value=0>Payment</option>
+          </select>
+        </div>
+        <div class="particular">
+          <input type="text" id="part" placeholder="Particular" required>
+        </div>
+        <div class="amount">
+          <input type="text" id="amt" placeholder="Amount" required>
+        </div>
+        <div class="folio">
+          <input type="text" id="folio" placeholder="Ledger Folio Number" oninput="showname();">
+          <span id="cust_name" style="color:white;">    ..................</span>
+        </div>
+      </div>
+      <button id="submit" disabled>Submit</button>
+    </div>
+    <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+    <script>require("./daybook.js");</script>
+    <script src="./js/hide_submit.js"></script>
+    <script src="./showname.js"></script>
+    <script>require("./createtable.js")</script>
+  </body>
+</html>

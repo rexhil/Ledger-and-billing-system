@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cargo Bill</title>
+    <link href="./css/bill.css" rel="stylesheet">
+    <link href="./css/cargo.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/forms-nr-min.css">
+  </head>
+  <body>
+    <div id="form">
+      <h1 id="title" style="color:white;">Cargo Bill</h2>
+      <div class="pure-form">
+        <div class="row clearfix">
+            <div class="row">
+              <div class="sr_name">
+                <input type="text" name="sname" id="sname" placeholder="Enter name and address of Sender" required>
+                <input type="text" name="rname" id="rname" placeholder="Enter name and address of receiver" required>
+              </div>
+              <div class="dfo">
+                <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date">
+                <input type="text" name="oc" class="form-control" id="oc" placeholder="other charges">
+                <input type="number" id="lfn" placeholder="Enter folio number" oninput="showname();">
+                <span id="cust_name" style="color:white;">    ..................</span>
+              </div>
+            </div>
+          <div  class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr id='addr0'>
+                  <td class='sn'>1</td>
+                  <td id="part"><input type="text"  placeholder='Particular' class="part" required/></td>
+                  <td><input class="pic" type="text" placeholder='pics'/></td>
+                  <td><input type="text" name='w[]' placeholder='Weight' class="weight" required/></td>
+                  <td><input type="text" name='r[]' placeholder='Rate' class="rate" required/></td>
+                </tr>
+                <tr id='addr1'></tr>
+                <tr id='addr2'></tr>
+                <tr id='addr3'></tr>
+                <tr id='addr4'></tr>
+                <tr id='addr5'></tr>
+                <tr id='addr6'></tr>
+                <tr id='addr7'></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br/>
+        <a id="add_row" class="button">Add Row</a>
+        <a id='delete_row' class="button" style="float:right;">Delete Row</a>
+      </div>
+      <button id="submit" disabled>Submit</button>
+    </div>
+    <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+    <script> require("./js/jquery.min.js");</script>
+    <script src="./js/hide_submit.js"></script>
+    <script> require("./js/addel.js");</script>
+    <script> require("./cargo.js");</script>
+    <script src="./showname.js"></script>
+  </body>
+</html>

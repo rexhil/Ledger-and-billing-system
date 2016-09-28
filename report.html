@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Report</title>
+    <link rel="stylesheet" href="./css/forms-nr-min.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+    <link rel="stylesheet" href="./css/report.css">
+  </head>
+  <body>
+    <div id="form" >
+      <div class="db">
+        <label for="daybook">Day-Book Report</label>
+          <input type="text" value="MM/DD/YYYY" class="datePicker form-control"/>
+          <button type="button" id="submit_db">Generate Report</button>
+      </div>
+      <div class="tkt">
+        <label for="ticket">Ticket Issued Report:</label>
+          <input type="text" value="MM/DD/YYYY" class="datePicker form-control"/>
+        <select id="">
+          <option value="all">All</option>
+          <option value="unpaid">Unpaid</option>
+          <option value="paid">Paid</option>
+        </select>
+        <select id="air">
+          <option value="all">All</option>
+          <option value="sauray">Sauray</option>
+          <option value="buddha">Buddha</option>
+          <option value="yeti">Yeti</option>
+        </select>
+        <button type="button" id="submit_tkt">Generate Report</button>
+      </div>
+      <div class="ledger">
+        <label for="folio">Enter Ledger Folio to Check Ledger:</label>
+        <input type="number" id="lfn" value="" oninput="showname();">
+        <span id="cust_name" style="color:white;">    ..................</span>
+        <button type="button" id="submit_lfn">Generate Report</button>
+      </div>
+    </div>
+    <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+    <script> require("./jquery-ui/jquery-ui.min.js");</script>
+    <script> require("./js/datepicker.js");</script>
+    <script src="./showname.js"></script>
+  </body>
+</html>
