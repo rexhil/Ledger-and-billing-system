@@ -1,7 +1,7 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "description": "Simple App",
+  "description": "Ledger and billing system",
   "main": "app.js",
   "scripts": {
     "start": "electron .",
