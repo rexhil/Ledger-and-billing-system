@@ -4,8 +4,7 @@
   "description": "Ledger and billing system",
   "main": "app.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-packager . myapp --platform=win32 --arch=ia32"
+    "start": "electron ."  
   },
   "author": "Rexhil Regmi",
   "license": "MIT",
