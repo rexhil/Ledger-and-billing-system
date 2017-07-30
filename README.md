@@ -1,6 +1,6 @@
 # Ledger-and-billing-system
 Ledger and Billing report For travel agency, Build on electron framework for cross platform implementation. 
-Used sqlite database for storing data. 
+Used SQLite database for storing data. 
 
 
 ## Installation
