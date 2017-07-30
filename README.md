@@ -3,11 +3,11 @@ Ledger and Billing report For travel agency, Build on electron framework for cro
 Used SQLite database for storing data. 
 
 
-## Installation
+## Installation and Usage
 
-> npm install <br/>
+>npm install <br/>
 After all dependencies are installed <br/>
-> npm start <br/>
+npm start <br/>
 username: admin <br/>
 password: sagarnpj <br/>
 
