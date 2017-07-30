@@ -3,11 +3,11 @@ Ledger and Billing report For travel agency, Build on electron framework for cro
 
 ## Installation
 
-> npm install 
-After all dependencies are installed
-> npm start
-username: admin
-password: sagarnpj
+> npm install <br/>
+After all dependencies are installed <br/>
+> npm start <br/>
+username: admin <br/>
+password: sagarnpj <br/>
 
 
 
